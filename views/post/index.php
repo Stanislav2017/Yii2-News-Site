@@ -3,7 +3,7 @@
         <div class="well">
             <h3><?= $item->title ?></h3>
             <p><?= $item->description ?></p>
-            <a href="<?= Yii::$app->urlManager->createUrl('post/view', $item->id) ?>">Detail...</a>
+            <a href="<?= Yii::$app->urlManager->createUrl(['post/view', 'id' =>  $item->id]) ?>">Detail...</a>
         </div>
     <? endforeach ?>
 <? endif ?>
